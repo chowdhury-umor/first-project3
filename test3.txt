@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+
+ int arr[5],i,even_sum=0,odd_sum=0;
+
+     for(i=0;i<5;i++){
+
+        scanf("%d", &arr[i]);
+ }
+     for(i=0;i<5;i++){
+        printf("%d\n", arr[i]);
+
+     if(arr[i]%2==0)
+        even_sum=even_sum+arr[i];
+     else
+        odd_sum=odd_sum+arr[i];
+     }
+
+     printf("sum of odd: %d\n", odd_sum);
+     printf("sum of even: %d\n", even_sum);
+
+return 0;
+}
